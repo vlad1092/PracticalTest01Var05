@@ -7,8 +7,6 @@
     android:orientation="vertical"
     tools:context=".PracticalTest01Var05MainActivity">
 
-    <!-- C.2 -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,8 +18,6 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <!-- B.2.a: saveEnabled=false -> sistemul nu salveaza/restaureaza automat starea -->
-
         </LinearLayout>
 
         <LinearLayout
@@ -30,14 +26,12 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-
             <Button
-                android:id="@+id/press_me_too_button"
+                android:id="@+id/navigate_to_secondary_activity_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="NAVIGATE TO SECONDARY ACTIVITY" />
-
 
         </LinearLayout>
     </LinearLayout>
@@ -54,11 +48,8 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <!-- B.2.a: saveEnabled=false -> sistemul nu salveaza/restaureaza automat starea -->
-
-
             <Button
-                android:id="@+id/press_me_button"
+                android:id="@+id/top_left_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -71,20 +62,18 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-
             <Button
-                android:id="@+id/press_me_too_button"
+                android:id="@+id/top_right_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="TOP RIGHT" />
 
-
         </LinearLayout>
     </LinearLayout>
 
     <Button
-        android:id="@+id/navigate_to_secondary_activity_button"
+        android:id="@+id/center_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CENTER" />
@@ -100,11 +89,8 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <!-- B.2.a: saveEnabled=false -> sistemul nu salveaza/restaureaza automat starea -->
-
-
             <Button
-                android:id="@+id/press_me_button"
+                android:id="@+id/bottom_left_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -117,24 +103,32 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-
             <Button
-                android:id="@+id/press_me_too_button"
+                android:id="@+id/bottom_right_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="BOTTOM RIGHT" />
 
-
         </LinearLayout>
     </LinearLayout>
 
     <TextView
-        android:id="@+id/acceleration_text_view"
+        android:id="@+id/buttons_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="8dp"
-        android:text="Top left, Top right, Center, Bottom left, Bottom right"
+        android:text=""
+        android:textSize="16sp" />
+
+    <!-- B.2.a - afisare contor apasari -->
+    <TextView
+        android:id="@+id/clicks_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Clicks: 0"
         android:textSize="16sp" />
 </LinearLayout>
